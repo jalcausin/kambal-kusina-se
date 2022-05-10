@@ -1,0 +1,180 @@
+body {
+    min-height: 100vh;
+    display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    font-family: ovo;
+    background: #e5efde;
+}
+
+input {
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+.tablecon {
+	padding-left: 165px;
+	}
+.search
+{
+	overflow: auto;
+	border-radius: 5px;
+	display:block;
+}
+
+.search input[type="text"] {
+	font-family: ovo;
+	font-size: 17px;
+	border: 0px;
+	width: 88%;
+	padding: 5px;
+}
+
+.search input[type="text"]:focus {
+	outline: 0;
+}
+
+.search input[type="submit"] {
+	border-radius: 0 5px 5px 0;
+	position: relative;
+	left: -90px;
+	font-family: ovo;
+	font-size: 18px;
+	border: 0px;
+	background: none;
+	background-color: #DF7D60;
+	color: #fff;
+	float: right;
+	padding: 4.5px;
+    cursor:pointer;
+}
+
+#Searchstocks{
+padding: 20px;
+padding-left: 150px;
+}
+
+.updateStocks{
+padding: 50px;
+padding-left: 315px;
+padding-right:180px;
+}
+
+.updateStocks  #stockChange{
+font-size: 20px;
+width: 8%;
+}
+
+#product{
+font-size: 20px;
+padding-bottom: 2px;
+width: 70%;
+}
+
+
+.backbtn{
+	opacity: 0.7;
+	display: block;
+	width: 120%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #DF7D60, #DF7D60, #DF7D60);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Ovo', serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.search input[type="submit"]:hover {
+	background: #9DCAAF;
+}
+
+
+
+@media only screen and (max-width : 600px) {
+	
+	.search
+	{
+		width: 99%;
+		margin: 0 auto;
+		margin-bottom: 45px;
+		margin-left: 50px;
+	}
+
+}
+
+.table-container h2 {
+	font-size: 	50px;
+	text-align: center;	
+	border-bottom: 1px solid #DF7D60;
+	padding-bottom: 8px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #DF7D60;
+	color: white;
+}
+
+th, td {
+	padding: .8rem;
+	font-size: 1.4rem;
+}
+    
+tbody {
+	background-color: #eee;
+	color: #555;
+}
+
+@media screen and (max-width: 600px){
+	th {
+	 display: none;
+	}
+	td{
+	display: block;
+	}
+	
+	td:first-child{
+	background-color: #DF7D60;
+	color: #fff;
+	text-align: center;
+	}
+	
+	td:nth-child(2)::before{
+	content: "Product Name: "
+	}
+	
+	td:nth-child(3)::before{
+	content: "Category: "
+	}
+	
+	td:nth-child(4)::before{
+	content: "Quantity: "
+	}
+	
+	td:nth-child(5)::before{
+	content: "Price: "
+	}
+	
+	td{
+	text-align: right;
+	}
+	
+	td:before{
+	float: left;
+	margin-right: 3rem;
+	font-weight: bold;
+	}
+}

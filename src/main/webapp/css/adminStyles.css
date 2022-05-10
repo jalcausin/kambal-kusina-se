@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #dddada;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Ovo', serif;
+
+}
+
+.container{
+    width: 400px;
+    height: 610px;
+    background: #e5efde;
+    color: #DF7D60;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius:50px
+}
+
+.avatar{
+    width: 180px;
+    height: 100px;
+    top: -50px;
+
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 24px;
+}
+
+.container p{
+    margin-bottom: 40px;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+button {
+    display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #DF7D60, #DF7D60, #DF7D60);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Ovo', serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.logout {
+	display: block;
+	width: 80%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #DF7D60, #DF7D60, #DF7D60);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Ovo', serif;
+	text-transform: uppercase;
+	margin: auto;
+	cursor: pointer;
+	transition: .5s;
+}
+
+
+button:hover {
+    opacity: 0.7;
+}
